@@ -1,0 +1,43 @@
+<layout>
+    <adminhtml_carriers_index>
+        <reference name="content">
+            <block type="DEG_Carriers_Adminhtml/Carriers" name="deg.carriers">
+                <block type="DEG_Carriers_Adminhtml/Carriers_Grid" name="deg.carriers.grid" as="grid">
+                    <action method="setSaveParametersInSession">
+                        <flag>true</flag>
+                    </action>
+                    <action method="setEmptyText" translate="text">
+                        <text>No orders found</text>
+                    </action>
+                </block>
+            </block>
+        </reference>
+    </adminhtml_carriers_index>
+
+    <adminhtml_carriers_grid>
+        <block type="DEG_Carriers_Adminhtml/Carriers_Grid" name="root" output="toHtml">
+            <action method="setEmptyText" translate="text">
+                <text>No orders found</text>
+            </action>
+        </block>
+    </adminhtml_carriers_grid>
+
+    <adminhtml_carriers_view>
+        <reference name="content">
+            <block type="DEG_Carriers_Adminhtml/View" name="DEG_Carriers_view">
+                <block type=" DEG_Carriers_Adminhtml/View_Form" name="deg.carriers.view.form" as="form" template="DEG/Carriers/view.phtml" />
+            </block>
+        </reference>
+    </adminhtml_carriers_view>
+
+    <adminhtml_carriers_edit>
+        <update handle="editor"/>
+        <reference name="content">
+            <block type="DEG_Carriers_Adminhtml/Carriers_Edit"
+                   name="deg_carriers_edit">
+                <block type="DEG_Carriers/Carriers_Edit_Form"
+                       name="deg_carriers_edit_form" as="form" />
+            </block>
+        </reference>
+    </adminhtml_carriers_edit>
+</layout>

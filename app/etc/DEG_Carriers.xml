@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <DEG_Carriers>
+            <active>true</active>
+            <codePool>local</codePool>
+        </DEG_Carriers>
+    </modules>
+</config>

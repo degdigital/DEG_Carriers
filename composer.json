@@ -1,0 +1,15 @@
+{
+  "name": "deg/carriers",
+  "type": "magento-module",
+  "description": "Allow admin creation of shipping carriers, primarily for easily adding tracking information to shipments.",
+  "require": {
+    "magento-hackathon/magento-composer-installer":"*"
+  },
+  "extra":{
+    "map":[
+      ["app/code/local/DEG/Carriers", "app/code/local/DEG/Carriers"],
+      ["app/design/adminhtml/default/default/layout/deg/carriers.xml", "app/design/adminhtml/default/default/layout/deg/carriers.xml"],
+      ["app/etc/modules/DEG_Carriers.xml", "app/etc/modules/DEG_Carriers.xml"]
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<config>
+    <menu>
+        <sales>
+            <children>
+                <carriers translate="title">
+                    <title>Shipping Carriers</title>
+                    <sort_order>100</sort_order>
+                    <action>adminhtml/carriers</action>
+                </carriers>
+            </children>
+        </sales>
+    </menu>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <sales>
+                        <children>
+                            <carriers translate="title">
+                                <title>Shipping Carriers</title>
+                                <sort_order>100</sort_order>
+                            </carriers>
+                        </children>
+                    </sales>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>
