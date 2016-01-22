@@ -7,7 +7,7 @@
   },
   "extra":{
     "map":[
-      ["app/code/local/DEG/Carriers", "app/code/local/DEG/Carriers"],
+      ["app/code/community/DEG/Carriers", "app/code/community/DEG/Carriers"],
       ["app/design/adminhtml/default/default/layout/deg/carriers.xml", "app/design/adminhtml/default/default/layout/deg/carriers.xml"],
       ["app/etc/modules/DEG_Carriers.xml", "app/etc/modules/DEG_Carriers.xml"]
     ]
