@@ -1,6 +1,6 @@
 <?php
 
-class DEG_Carriers_Block_Adminhtml_Carriers_Grid extends DigitalEvolution_Adminhtml_Block_Widget_Grid
+class DEG_Carriers_Block_Adminhtml_Carriers_Grid extends Mage_Adminhtml_Block_Widget_Grid
 {
     protected function _construct()
     {
